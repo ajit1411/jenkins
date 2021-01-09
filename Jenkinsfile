@@ -23,7 +23,7 @@ node{
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
         filePath: "*.zip",
-        sourceDirectory: 'target',
+        sourceDirectory: 'AppCode/build',
         targetDirectory: '/site/wwwroot/'
     }
 }
