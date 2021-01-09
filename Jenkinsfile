@@ -23,6 +23,6 @@ node{
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
         sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/AppCode/build',
-        targetDirectory: 'webapp'
+        targetDirectory: 'webapp_build'
     }
 }
