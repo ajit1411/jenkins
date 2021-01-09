@@ -15,15 +15,15 @@ node{
             cd AppCode
             npm run build
             cd ../
-            zip app.zip AppCode/build
+            zip app.zip AppCode/build AppCode/public/web.config
         '''
     }
     stage('Deploy'){
         azureWebAppPublish azureCredentialsId:env.CRED_ID,
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
-        filePath: "*.zip",
-        sourceDirectory: 'AppCode/build',
-        targetDirectory: 'https://ajit-react-app-todo.scm.azurewebsites.net/wwwroot/'
+        filePath: "app.zip",
+        sourceDirectory: './',
+        targetDirectory: 'home/site/wwwroot'
     }
 }
