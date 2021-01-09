@@ -24,6 +24,6 @@ node{
         appName: env.WEB_APP,
         filePath: "app.zip",
         sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/',
-        targetDirectory: '/home/wwwroot'
+        targetDirectory: '/home/site/wwwroot'
     }
 }
