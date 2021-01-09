@@ -9,8 +9,10 @@ node{
     }
     stage('Building artifact'){
         sh '''
+            cd AppCode
             npm run build
-            zip app.zip build public/web.config
+            cd ../
+            zip app.zip AppCode/build public/web.config
         '''
     }
     stage('Deploy'){
