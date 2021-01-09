@@ -4,6 +4,7 @@ node{
     }
     stage('Dependencies Installation'){
         sh '''
+            ls -l
             cd AppCode/
             npm install
         '''
