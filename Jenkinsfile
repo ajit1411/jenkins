@@ -1,6 +1,7 @@
 node{
     stage('init'){
         echo "initializing the pipeline"
+        checkout csm
     }
     stage('Dependencies Installation'){
         sh '''
