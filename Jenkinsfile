@@ -22,7 +22,7 @@ node{
         azureWebAppPublish azureCredentialsId:env.CRED_ID,
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
-        sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/AppCode/build',
+        sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/AppCode',
         targetDirectory: 'react'
     }
 }
