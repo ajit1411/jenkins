@@ -24,6 +24,6 @@ node{
         appName: env.WEB_APP,
         filePath: "app.zip",
         sourceDirectory: './',
-        targetDirectory: 'https://ajit-react-app-todo.scm.azurewebsites.net:/home/site/repository'
+        targetDirectory: 'site/wwwroot'
     }
 }
