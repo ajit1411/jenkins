@@ -22,8 +22,7 @@ node{
         azureWebAppPublish azureCredentialsId:env.CRED_ID,
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
-        filePath: "app.zip",
-        sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/',
+        sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/AppCode/build',
         targetDirectory: 'webapp'
     }
 }
