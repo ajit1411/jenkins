@@ -1,24 +1,24 @@
 node{
-    stage('init'){
+    stage('Git Checout'){
         echo "initializing the pipeline"
         checkout scm
     }
-    stage('Dependencies Installation'){
+    stage('Dependency Installation'){
         sh '''
             ls -l
             cd AppCode/
             npm install
         '''
     }
-    stage('Building artifact'){
+    stage('Building Artifact'){
         sh '''
             cd AppCode
             npm run build
             cd ../
-            zip app.zip AppCode/build AppCode/public/web.config
+            cp index.js AppCode/build
         '''
     }
-    stage('Deploy'){
+    stage('Deploy Artifact'){
         azureWebAppPublish azureCredentialsId:env.CRED_ID,
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
