@@ -15,7 +15,7 @@ node{
             cd AppCode
             npm run build
             cd ../
-            zip app.zip AppCode/build public/web.config
+            zip app.zip AppCode/build AppCode/public/web.config
         '''
     }
     stage('Deploy'){
