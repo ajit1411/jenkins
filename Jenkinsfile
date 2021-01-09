@@ -23,6 +23,6 @@ node{
         resourceGroup: env.RES_GROUP,
         appName: env.WEB_APP,
         sourceDirectory: '/var/lib/jenkins/workspace/mytodoapp/AppCode/build',
-        targetDirectory: 'ftp://waws-prod-pn1-005.ftp.azurewebsites.windows.net/site/wwwroot'
+        targetDirectory: 'react'
     }
 }
