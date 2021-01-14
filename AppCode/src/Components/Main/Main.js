@@ -75,7 +75,7 @@ const Main = () => {
                         isLoggedIn ? (
                             <React.Fragment>
                                 <span className='title'>
-                                    To Do App - Ajit
+                                    To Do App - Jadhav
                                 </span>
                                 <div className='main__user-form'>
                                     <div className='input'>
